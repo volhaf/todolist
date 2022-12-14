@@ -1,0 +1,140 @@
+
+*,
+*::before,*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+    font-family: ABeeZee;
+    src: url("fonts/ABeeZee-Regular.ttf");
+   }
+
+body {
+    font-family: ABeeZee;
+    width: 100%;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-bottom: 1px solid gray; */
+    height: 60px;
+}
+
+.conteiner-icon,
+.conteiner-name-project,
+.conteiner-nav,
+.conteiner-profile {
+    height: 60px;
+}
+
+img.conteiner-icon {
+    flex-grow: 0.5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-icon {
+    margin-top: 15px;
+}
+
+.conteiner-name-project {
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+
+.conteiner-name-project h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.conteiner-nav {
+    flex-grow: 3;
+    padding-top: 20px;
+}
+
+.navigation {
+    align-items: center;
+    font-size: 18px;
+
+}
+
+ul.navigation-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+.conteiner-profile {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-profile {
+    border-radius: 50%;
+}
+
+.nav-link {
+    text-decoration: none;
+
+}
+
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+} 
+td, th {
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+}
+td.name_title {
+    text-align: start;
+}
+.name_today {
+    text-align: start;
+}
+.name_data {
+    border: none;
+}
+
+.name_thead {
+    border-bottom: 1px solid #f0e9f0;
+}
+tbody tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f0e9f0;
+  }
+
+button {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    border-radius: 0.6em;
+    border: 0;
+}
+.btn-green {
+    background-color: rgb(8, 165, 8);
+}
+.btn-orange {
+    background-color: rgb(239, 166, 30);
+}
+.btn-gray {
+    background-color: rgb(147, 147, 147);
+}
